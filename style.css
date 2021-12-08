@@ -1,0 +1,151 @@
+:root {
+    /*! Primary */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    /*! Neutral */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-image: url("/images/pattern-background-desktop.svg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container__card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    background-color: #fff;
+    margin: 2rem 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container__card img {
+    width: 100%;
+}
+
+.container__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.7rem 1.7rem;
+}
+
+.container__desc h1 {
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.container__desc #desc {
+    line-height: 1.5rem;
+}
+
+.container__desc p {
+    text-align: center;
+    font-size: 14px;
+    color: var(--Desaturated-blue);
+}
+
+.container__music {
+    border-radius: 8px;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: var(--Very-pale-blue);
+}
+
+.container__music img {
+    width: 19%;
+}
+
+.container__music p {
+    margin-left: 0.8rem;
+}
+
+.container__music p span {
+    font-weight: 900;
+    color: black;
+}
+
+.container__music a {
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--Bright-blue);
+    transition: all 0.3s ease-in-out;
+}
+
+.container__music a:hover {
+    color: hsla(245, 75%, 52%, 0.624);
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    border-style: none;
+    border-radius: 8px;
+    height: 2.7rem;
+    font-weight: 700;
+    cursor: pointer;
+    word-spacing: 0.3rem;
+    transition: all 0.3s ease-in-out;
+
+}
+
+#fr {
+    margin-bottom: 0.6rem;
+    background-color: var(--Bright-blue);
+    color: white;
+}
+
+#fr:hover {
+    background-color: hsla(245, 75%, 52%, 0.624);
+}
+
+#sec {
+    background-color: #fff;
+    color: var(--Desaturated-blue);
+}
+
+#sec:hover {
+    color: black;
+}
+
+@media (min-width: 768px) {
+    .container__card {
+        width: 41%;
+    }
+}
+
+@media (min-width: 1360px) {
+    .container__card {
+        width: 23%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container__card {
+        width: 20%;
+    }
+}
